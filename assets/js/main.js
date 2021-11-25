@@ -18,7 +18,7 @@ var navLink=['index.html','menu.html','events.html','about.html','reservation.ht
 function getNavigation(){
     var ispis='<ul id="navLarge" class="m-0 px-3">'
     for(let i=0;i<navName.length;i++){
-        ispis+=`<li><a class="text-decoration-none text-light" href="${navLink[i]}">${navName[i]}</a></li>`
+        ispis+=`<li><a class="text-decoration-none" href="${navLink[i]}">${navName[i]}</a></li>`
     }
     ispis+="</ul>"
 
@@ -26,7 +26,7 @@ function getNavigation(){
         ispis+=`<a href="#"><i class="text-light fs-3 fa fa-bars"></i></a>`
         ispis+='<ul id="navSmall" class="m-0 px-3">'
         for(let i=0;i<navName.length;i++){
-            ispis+=`<li><a class="text-decoration-none text-light" href="${navLink[i]}">${navName[i]}</a></li>`
+            ispis+=`<li><a class="text-decoration-none" href="${navLink[i]}">${navName[i]}</a></li>`
         }
         ispis+="</ul>"
     ispis+=`</div>`
@@ -155,11 +155,11 @@ function getFooter(){
     </div>
     <div class="blok mreze">
         <h4 class="fs-3">Social networks</h4>
-        <a class="text-dark mx-3 fs-3" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="text-dark mx-3 fs-3" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a class="text-dark mx-3 fs-3" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="mx-3 fs-3" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="mx-3 fs-3" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="mx-3 fs-3" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
         <br/>
-        <a class="text-dark mx-3 fs-4 text-decoration-none" href="#" target="_blank">Documentation</a>
+        <a class="mx-3 fs-4 text-decoration-none" href="#" target="_blank">Documentation</a>
     </div>`
 
     $("footer").html(ispis)
@@ -239,8 +239,8 @@ function getEvents(){
         ispis+=`<div class="event">
             <div><img class="img-fluid" src="assets/images/${eventImage[i]}" alt="${eventHeading[i]}"/></div>
             <div>
-                <h2>${eventHeading[i]}</h2>
-                <p>${eventText[i]}</p>
+                <h2 class="mb-5">${eventHeading[i]}</h2>
+                <p class="mt-5">${eventText[i]}</p>
             </div>
         </div>`
     }
