@@ -146,7 +146,7 @@ function getFooter(){
         <a href="index.html" class="fs-1 text-decoration-none text-dark">
         Restauco
         </a>
-        <p class="mt-3">Monday-Friday 9am-1am i Sub 9-15h</p>
+        <p class="mt-3">Monday-Friday 9am-1am</p>
         <p>Saturday and Sunday 10am-3am</p>
     </div>
     <div class="blok">
