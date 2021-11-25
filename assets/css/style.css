@@ -1,0 +1,314 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Patrick Hand', cursive;
+}
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+    position: fixed;
+    z-index: 99;
+}
+header nav{
+    width: 50%;
+}
+.headerImage{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/mainPhoto.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cover{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+}
+h2{
+    color: #4d312c;
+    font-weight: bold;
+}
+#offer,#gallery,#events{
+    width: 95%;
+    margin: 0px auto;
+}
+.oneOffer{
+    width: 30%;
+    border: 1px solid #e6dad8;
+    padding: 30px;
+    border-radius: 7px;
+}
+.oneOffer:hover{
+    border: 1px solid #fff;
+    box-shadow: 0 20px 30px rgb(254 95 65 / 10%);
+}
+.oneOffer h3:hover{
+    color: #fe5f41;
+}
+.oneOffer h3, .oneOffer p{
+    margin: 25px 0px;
+}
+.customer{
+    border: 1px solid #fe5f41;
+    padding: 30px;
+    border-radius: 7px;
+    margin: 0px 10px;
+    text-align: center;
+}
+.customer div{
+    width: 75%;
+    margin: 0px auto;
+}
+img{
+    border-radius: 2px;
+}
+.customer img{
+    border-radius: 50%;
+}
+.customer p{
+    margin: 10px;
+}
+.slick-prev:before,.slick-next:before{
+    color: #fe5f41;
+}
+ul li{
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#book{
+    width: 100%;
+    text-align: center;
+    background-image: url("../images/book.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#book div{
+    padding: 80px;
+    background-color: #f5c97ee6;
+}
+.meal{
+    width: 25%;
+}
+.meal img:hover{
+    transform: scale(1.1);
+    transition: ease;
+    transition-duration: 0.2s;
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #e6dad8;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    padding: 40px 0px;
+}
+footer .blok{
+    border: 0px;
+}
+.mreze{
+    text-align: center;
+}
+.mealWrapper{
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#mealTypes{
+    width: 20%;
+}
+#meals{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.mealTypeImage img{
+    width: 30px;
+    margin-right: 10px;
+}
+#mealTypes ul li a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#mealTypes ul li{
+    background-color: #e6dad8;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.oneMeal{
+    width: 30%;
+    margin: 0px 10px;
+}
+.price{
+    color: #fe5f41;
+}
+.oneMeal p{
+    margin: 5px 0px;
+}
+#mealTypes ul .active{
+    background-color: #bcb6b5;
+}
+#events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.event{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.event:nth-child(even){
+    flex-direction: row-reverse;
+}
+.event div{
+    width: 45%;
+}
+.ImageWithText{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ImageWithText div{
+    width: 45%;
+}
+.ImageWithText #form,.ImageWithText #form .input-group{
+    width: 100%;
+}
+#message{
+    height: 200px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    background-color: #fe5f41;
+}
+.form-control:focus,.btn:focus{
+    border-color: #fe5f41;
+    box-shadow: 0 0 0 0.25rem #fe5f4142
+}
+#backToTop{
+    position: fixed;
+    z-index: 99;
+    bottom: 50px;
+    right: 30px;
+}
+#backToTop a{
+    color: #fe5f41;
+}
+#mobileNav{
+    display: none;
+}
+#mobileNav ul{
+    display: none;
+}
+#navSmall{
+    position: absolute;
+    top: 61px;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 10px 20px;
+    left: 0px;
+    right: 0px;
+}
+#navSmall li{
+    margin: 15px 0px;
+}
+#navSmall li a{
+    padding: 10px;
+}
+#logo a{
+    font-size: 30px;
+}
+.ImageWithText a{
+    text-decoration: none;
+    color: #fe5f41;
+}
+@media screen and (max-width:768px){
+    #mealTypes,#meals{
+        width: 100%;
+    }
+    #mealTypes ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .mealTypeImage img{
+        height: 30px;
+        width: auto;
+    }
+    #mealTypes ul li{
+        margin: 5px;
+    }
+    #events,.ImageWithText{
+        justify-content: center;
+    }
+    .event div{
+        width: 100%;
+    }
+    .ImageWithText div{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    #navLarge{
+        display: none;
+    }
+    #mobileNav{
+        display: block;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:586px){
+    #offer{
+        justify-content: center!important;
+    }
+    .oneOffer{
+        width: 90%;
+    }
+    .meal{
+        width: 50%;
+    }
+    #gallery{
+        width: 100%;
+    }
+    .meal img:hover{
+        transform: scale(1);
+    }
+    #mealTypes ul{
+        justify-content: center;
+    }
+    .oneMeal{
+        width: 100%;
+    }
+}
