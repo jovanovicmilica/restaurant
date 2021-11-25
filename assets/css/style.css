@@ -8,7 +8,7 @@ body{
 }
 header{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     z-index: 99;
 }
@@ -159,13 +159,17 @@ footer{
 }
 .oneMeal{
     width: 30%;
-    margin: 0px 10px;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .price{
     color: #fe5f41;
 }
 .oneMeal p{
-    margin: 5px 0px;
+    margin: 5px;
+    font-size: 20px;
 }
 #mealTypes ul .active{
     background-color: #bcb6b5;
@@ -173,10 +177,11 @@ footer{
 #events{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .event{
-    width: 100%;
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -233,10 +238,11 @@ iframe{
 #navSmall{
     position: absolute;
     top: 61px;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     left: 0px;
     right: 0px;
+    text-align: center;
 }
 #navSmall li{
     margin: 15px 0px;
@@ -251,7 +257,18 @@ iframe{
     text-decoration: none;
     color: #fe5f41;
 }
-
+header ul li a{
+    color: #fff;
+}
+footer a{
+    color: #000;
+}
+header ul li a:hover,footer a:hover{
+    color: #fe5f41;
+}
+.ImageWithText .authorImage{
+    width: 30%;
+}
 @media screen and (max-width:768px){
     #mealTypes,#meals{
         width: 100%;
