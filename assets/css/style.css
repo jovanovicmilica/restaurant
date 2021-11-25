@@ -121,10 +121,8 @@ footer{
     display: flex;
     justify-content: space-around;
     text-align: justify;
+    flex-wrap: wrap;
     padding: 40px 0px;
-}
-footer .blok{
-    border: 0px;
 }
 .mreze{
     text-align: center;
@@ -253,6 +251,7 @@ iframe{
     text-decoration: none;
     color: #fe5f41;
 }
+
 @media screen and (max-width:768px){
     #mealTypes,#meals{
         width: 100%;
@@ -286,6 +285,14 @@ iframe{
     #mobileNav{
         display: block;
         text-align: right;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .blok{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
     }
 }
 
