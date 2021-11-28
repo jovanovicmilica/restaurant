@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 .headerWrapper{
     width: 100%;
@@ -47,8 +47,12 @@ h2{
     color: #4d312c;
     font-weight: bold;
 }
-#offer,#gallery,#events{
+#offer,#events{
     width: 95%;
+    margin: 0px auto;
+}
+#gallery{
+    width: 90%;
     margin: 0px auto;
 }
 .oneOffer{

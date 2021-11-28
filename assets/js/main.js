@@ -221,9 +221,9 @@ function getDinner(e){
     e.preventDefault()
     $("#mealTypes li").removeClass('active')
     this.parentElement.classList.add("active")
-    var dinner=['Oldtimer','Classic Ribeye','Classic Sirloin']
-    var dinnerImage=['meal11.jpg','meal12.jpg','meal13.jpg','meal10.jpg']
-    var dinnerPrice=[12,11,13]
+    var dinner=['Oldtimer','Classic Ribeye','Classic Sirloin','Crispy Honey-Chipotle']
+    var dinnerImage=['meal11.jpg','meal12.jpg','meal13.jpg','meal10.jpg','meal25.jpg']
+    var dinnerPrice=[12,11,13,15]
     printMeal(dinner,dinnerImage,dinnerPrice)
 }
 function getLunch(e){
