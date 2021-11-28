@@ -6,11 +6,15 @@
 body{
     font-family: 'Patrick Hand', cursive;
 }
-header{
+.headerWrapper{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.74);
     position: fixed;
     z-index: 99;
+    background-color: #000;
+}
+header{
+    width: 90%;
+    margin: 0px auto;
 }
 header nav{
     width: 50%;
@@ -159,13 +163,17 @@ footer{
 }
 .oneMeal{
     width: 30%;
-    margin: 0px 10px;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .price{
     color: #fe5f41;
 }
 .oneMeal p{
-    margin: 5px 0px;
+    margin: 5px;
+    font-size: 20px;
 }
 #mealTypes ul .active{
     background-color: #bcb6b5;
@@ -173,10 +181,11 @@ footer{
 #events{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .event{
-    width: 100%;
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -211,10 +220,10 @@ iframe{
 .btn{
     background-color: #fe5f41;
 }
-.form-control:focus,.btn:focus{
+/* .form-control:focus,.btn:focus{
     border-color: #fe5f41;
     box-shadow: 0 0 0 0.25rem #fe5f4142
-}
+} */
 #backToTop{
     position: fixed;
     z-index: 99;
@@ -233,10 +242,11 @@ iframe{
 #navSmall{
     position: absolute;
     top: 61px;
-    background-color: rgba(0, 0, 0, 0.74);
+    background-color: rgb(0, 0, 0);
     padding: 10px 20px;
     left: 0px;
     right: 0px;
+    text-align: center;
 }
 #navSmall li{
     margin: 15px 0px;
@@ -245,13 +255,48 @@ iframe{
     padding: 10px;
 }
 #logo a{
-    font-size: 30px;
+    font-size: 35px;
 }
 .ImageWithText a{
     text-decoration: none;
     color: #fe5f41;
 }
-
+header ul li a{
+    color: #fff;
+    font-size: 25px;
+}
+footer a{
+    color: #000;
+}
+header ul li a:hover,footer a:hover{
+    color: #fe5f41;
+}
+.ImageWithText .authorImage{
+    width: 30%;
+}
+#modal{
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 75px;
+    bottom: 10px;
+    z-index: 99;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+}
+.scroll{
+    overflow: hidden;
+}
+#close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #000;
+}
+#modal{
+    overflow: scroll;
+}
 @media screen and (max-width:768px){
     #mealTypes,#meals{
         width: 100%;
