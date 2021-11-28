@@ -26,13 +26,14 @@ function getNavigation(){
         ispis+=`<a href="#"><i class="text-light fs-3 fa fa-bars"></i></a>`
         ispis+='<ul id="navSmall" class="m-0 px-3">'
         for(let i=0;i<navName.length;i++){
-            ispis+=`<li><a id="${navName[i]}" class="text-decoration-none" href="${navLink[i]}">${navName[i]}</a></li>`
+            ispis+=`<li><a id="${navName[i]}2" class="text-decoration-none" href="${navLink[i]}">${navName[i]}</a></li>`
         }
         ispis+="</ul>"
     ispis+=`</div>`
 
     document.getElementById("nav").innerHTML=ispis
     $("#Author").click(getAuthor)
+    $("#Author2").click(getAuthor)
 
     var bar=$("#mobileNav> a")
     bar.click(function(e){
@@ -439,6 +440,14 @@ function sendMessage(){
         $("textarea").val("")
         $("input[type='date']").val("")
         document.getElementById("ddGuests").selectedIndex=0
+        $("input[type='text']").removeClass("border-success")
+        $("input[type='text']").removeClass("border-danger")
+        $("textarea").removeClass("border-danger")
+        $("textarea").removeClass("border-success")
+        $("input[type='date']").removeClass("border-danger")
+        $("input[type='date']").removeClass("border-success")
+        document.getElementById("ddGuests").classList.remove("border-danger")
+        document.getElementById("ddGuests").classList.remove("border-success")
     }
 
 }
